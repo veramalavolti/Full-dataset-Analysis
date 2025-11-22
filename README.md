@@ -29,11 +29,16 @@ Questa fase introduce la struttura del dataset e permette di individuare eventua
 #### 3.1 Distribuzioni e variabili principali
 Analizzo la distribuzione dei voti (`G1`, `G2`, `G3`) tramite istogrammi e boxplot per identificare:
 - presenza di outlier  
-- andamento generale delle prestazioni degli studenti  
+- andamento generale delle prestazioni degli studenti
+  <img width="407" height="311" alt="image" src="https://github.com/user-attachments/assets/ffd7d382-6ac6-43f9-87f9-5868a2b93700" />
+
 
 #### 3.2 Matrice di correlazione
 Creo una heatmap delle correlazioni per evidenziare relazioni rilevanti tra variabili numeriche.  
 Osservo in particolare la relazione forte tra `G1`, `G2` e `G3`.
+
+<img width="657" height="497" alt="image" src="https://github.com/user-attachments/assets/24ef26d8-fb5f-4b32-ae8f-1c3fa3ed7d97" />
+
 
 #### 3.3 Analisi di gruppi
 Studio come cambia `G3` in base a:
