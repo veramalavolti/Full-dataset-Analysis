@@ -30,7 +30,8 @@ Questa fase introduce la struttura del dataset e permette di individuare eventua
 Analizzo la distribuzione dei voti (`G1`, `G2`, `G3`) tramite istogrammi e boxplot per identificare:
 - presenza di outlier  
 - andamento generale delle prestazioni degli studenti
-  <img width="407" height="311" alt="image" src="https://github.com/user-attachments/assets/ffd7d382-6ac6-43f9-87f9-5868a2b93700" />
+
+ <img width="407" height="311" alt="image" src="https://github.com/user-attachments/assets/ffd7d382-6ac6-43f9-87f9-5868a2b93700" />
 
 
 #### 3.2 Matrice di correlazione
