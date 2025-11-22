@@ -1,6 +1,9 @@
 # Machine learning Final Project
 Studio del dataset student-por per analizzare i fattori che influenzano il voto finale (G3) e costruire modelli di regressione (Random Forest, SVR) ottimizzati con RandomizedSearchCV.
 
+[Uploading Progetto_finale_Data_Science_Vera_Malavolti.ipynb…]()
+
+
 ## 📘 Struttura dettagliata del progetto
 
 ### 1. Setup dell’ambiente e import delle librerie
