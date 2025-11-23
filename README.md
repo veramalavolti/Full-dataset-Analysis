@@ -64,8 +64,58 @@ Questa fase introduce la struttura del dataset e permette di individuare eventua
 
 <img width="1002" height="564" alt="image" src="https://github.com/user-attachments/assets/de712f76-0ddb-4432-9beb-75fa1794efd6" />
 
+### 🔥 Risultati principali dell’EDA
+- **Correlazioni forti:**  
+  - G3 è strettamente correlato con **G1 (0.80)** e **G2 (0.91)**.
+- **Fattori positivi:** tempo di studio, istruzione dei genitori.  
+- **Fattori negativi:** fallimenti passati, consumo di alcol.  
+- **Distribuzione di G3:** centrata attorno all’11–12, ma con ampia variabilità (0–19).
+
+```python
+# Esempio di matrice di correlazione
+corr = df.corr(numeric_only=True)
+sns.heatmap(corr, cmap="coolwarm")
+
 <img width="1440" height="807" alt="image" src="https://github.com/user-attachments/assets/0154cc80-5f81-48a1-9802-d708461c818b" />
 
+
+---
+
+# 🟣 **Slide 5 — Metodologia**
+```markdown
+### 🧪 Workflow
+
+1. **EDA**
+   - Analisi delle distribuzioni, pattern e correlazioni.
+
+2. **Preprocessing**
+   - Numeriche → imputazione + standard scaling  
+   - Categoriali → imputazione + One-Hot Encoding  
+   - Implementato con `ColumnTransformer` + `Pipeline`.
+
+3. **Scenari**
+   - **A:** include G1 e G2 (scenario benchmark)  
+   - **B:** esclude G1 e G2 (scenario realistico di inizio anno)
+
+4. **Modelli**
+   - Linear Regression  
+   - Random Forest Regressor  
+   - Support Vector Regressor
+
+5. **Hyperparameter Tuning**
+   - RandomizedSearchCV + Nested Cross-Validation
+
+6. **Valutazione**
+   - MAE, RMSE, R²
+
+7. **Interpretazione**
+   - Permutation Importance per capire le variabili più rilevanti
+
+```python
+pipe = Pipeline([
+    ("preprocess", preprocessor),
+    ("model", RandomForestRegressor())
+])
 
 #### 3.1 Distribuzioni e variabili principali
 Analizzo la distribuzione dei voti (`G1`, `G2`, `G3`) tramite istogrammi e boxplot per identificare:
