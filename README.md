@@ -3,6 +3,11 @@ Studio del dataset student-por per analizzare i fattori che influenzano il voto 
 
 [Uploading Progetto_finale_Data_Science_Vera_Malavolti.ipynb…]()
 
+## Il dataset e gli obiettivi
+<img width="1002" height="564" alt="image" src="https://github.com/user-attachments/assets/1c8d3897-9b13-40a4-8f49-d1f4366b8330" />
+
+<img width="1002" height="564" alt="image" src="https://github.com/user-attachments/assets/aaa9eb3b-620e-40c9-80d5-9ffd1e941fc3" />
+
 
 ## 📘 Struttura dettagliata del progetto
 
@@ -28,6 +33,11 @@ Questa fase introduce la struttura del dataset e permette di individuare eventua
 ---
 
 ### 3. Analisi Esplorativa dei Dati (EDA)
+
+<img width="1002" height="564" alt="image" src="https://github.com/user-attachments/assets/de712f76-0ddb-4432-9beb-75fa1794efd6" />
+
+<img width="1440" height="807" alt="image" src="https://github.com/user-attachments/assets/0154cc80-5f81-48a1-9802-d708461c818b" />
+
 
 #### 3.1 Distribuzioni e variabili principali
 Analizzo la distribuzione dei voti (`G1`, `G2`, `G3`) tramite istogrammi e boxplot per identificare:
@@ -145,19 +155,28 @@ Ogni modello viene validato tramite cross-validation per ridurre il rischio di o
 - identificazione degli studenti su cui il modello sbaglia di più  
 
 Serve per capire pattern nascosti e limiti dei modelli.
+<img width="1440" height="807" alt="image" src="https://github.com/user-attachments/assets/604597d5-21e0-45cc-ab18-acb5abe56d0c" />
 
 ---
 
 ### 9. Conclusioni e spunti finali
+<img width="1440" height="807" alt="image" src="https://github.com/user-attachments/assets/dba388fb-f3fc-440e-a0b8-344639e61b6e" />
+
 Riassumo i risultati principali:
-- quali modelli hanno performato meglio  
+- quali modelli hanno performato meglio
 - differenze tra Scenario A e B  
 - ruolo cruciale dei voti intermedi  
-- influenza delle variabili sociali e familiari  
-- possibili applicazioni per interventi educativi mirati  
+- influenza delle variabili sociali e familiari
+<img width="1440" height="807" alt="image" src="https://github.com/user-attachments/assets/e2a6b49d-de03-4aeb-b92d-108586daf03e" />
+
+- possibili applicazioni per interventi educativi mirati
+
+
 
 Indico anche possibili sviluppi futuri:
 - utilizzo di modelli più avanzati (XGBoost, LightGBM)  
 - interpretabilità tramite SHAP  
 - analisi per sottogruppi (studenti a rischio, frequenza assenze, ecc.)
+<img width="1440" height="807" alt="image" src="https://github.com/user-attachments/assets/43bedcce-6853-4f7e-803c-1049f8a48b0b" />
+
 
