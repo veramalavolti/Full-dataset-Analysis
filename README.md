@@ -17,7 +17,7 @@ L’analisi comprende:
 - **File usato:** `student-por.csv` (corso di lingua portoghese)  
 - **Dimensioni:** 649 studenti × 33 variabili  
 
-### 🔍 Tipologie di variabili
+### Tipologie di variabili
 - **Famiglia/Sociale:** istruzione dei genitori, occupazione, dimensione familiare  
 - **Personale/Comportamentale:** età, genere, attività sociali, consumo di alcol  
 - **Scolastiche:** tempo di studio, assenze, supporto educativo  
@@ -27,7 +27,7 @@ Questo dataset integra aspetti sociali, comportamentali e scolastici, rendendolo
 
 <img width="1002" height="564" alt="image" src="https://github.com/user-attachments/assets/aaa9eb3b-620e-40c9-80d5-9ffd1e941fc3" />
 
-### 🎯 Obiettivi del progetto
+### Obiettivi del progetto
 - Predire il **voto finale (G3)** tramite modelli di regressione.
 - Confrontare le performance di diversi algoritmi.
 - Ottimizzare gli iperparametri mediante **RandomizedSearchCV + Nested Cross-Validation**.
@@ -37,7 +37,7 @@ Questo dataset integra aspetti sociali, comportamentali e scolastici, rendendolo
 L’obiettivo è unire rigore tecnico e utilità pedagogica.
 
 
-## 📘 Struttura dettagliata del progetto
+## Struttura dettagliata del progetto
 
 ### 1. Setup dell’ambiente e import delle librerie
 Configuro l’ambiente di lavoro importando le librerie necessarie per analisi e modellazione:
