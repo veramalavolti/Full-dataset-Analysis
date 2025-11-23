@@ -64,7 +64,7 @@ Questa fase introduce la struttura del dataset e permette di individuare eventua
 
 <img width="1002" height="564" alt="image" src="https://github.com/user-attachments/assets/de712f76-0ddb-4432-9beb-75fa1794efd6" />
 
-### 🔥 Risultati principali dell’EDA
+### Risultati principali dell’EDA
 - **Correlazioni forti:**  
   - G3 è strettamente correlato con **G1 (0.80)** e **G2 (0.91)**.
 - **Fattori positivi:** tempo di studio, istruzione dei genitori.  
@@ -82,7 +82,8 @@ sns.heatmap(corr, cmap="coolwarm")
 ---
 
 # 🟣 **Slide 5 — Metodologia**
-```markdown
+<img width="1405" height="786" alt="image" src="https://github.com/user-attachments/assets/be9a11bd-0d59-4b43-a15d-6161a4a73090" />
+
 ### 🧪 Workflow
 
 1. **EDA**
@@ -111,7 +112,6 @@ sns.heatmap(corr, cmap="coolwarm")
 7. **Interpretazione**
    - Permutation Importance per capire le variabili più rilevanti
 
-```python
 pipe = Pipeline([
     ("preprocess", preprocessor),
     ("model", RandomForestRegressor())
