@@ -218,23 +218,54 @@ Serve per capire pattern nascosti e limiti dei modelli.
 ---
 
 ### 9. Conclusioni e spunti finali
-<img width="1440" height="807" alt="image" src="https://github.com/user-attachments/assets/dba388fb-f3fc-440e-a0b8-344639e61b6e" />
+<img width="1405" height="786" alt="image" src="https://github.com/user-attachments/assets/e7f34e67-8d1b-4a41-a4fc-b8a7f21519ea" />
 
-Riassumo i risultati principali:
-- quali modelli hanno performato meglio
-- differenze tra Scenario A e B  
-- ruolo cruciale dei voti intermedi  
-- influenza delle variabili sociali e familiari
+### 📌 Sintesi
+Il **Random Forest** è il modello più stabile e affidabile.  
+La rimozione di G1/G2 riduce sensibilmente la capacità predittiva, sottolineando che le previsioni di inizio anno devono basarsi su indicatori comportamentali, scolastici e familiari.
+
+Il rendimento è un fenomeno multidimensionale.
+
+
 <img width="1440" height="807" alt="image" src="https://github.com/user-attachments/assets/e2a6b49d-de03-4aeb-b92d-108586daf03e" />
 
-- possibili applicazioni per interventi educativi mirati
+### ⭐ Variabili più importanti (Permutation Importance)
+- ❌ **Failures:** forte impatto negativo
+- 🚫 **Assenze:** l’alta frequenza di assenze riduce i risultati
+- ⏳ **Studytime:** più ore di studio = performance maggiore
+- 🎓 **Medu/Fedu:** maggiore istruzione dei genitori → voti più alti
+- 🍷 **Dalc/Walc:** il consumo di alcol penalizza significativamente
+
+```python
+from sklearn.inspection import permutation_importance
+perm = permutation_importance(model, X_test, y_test)
+
+```markdown
+### 🧠 Interpretazione del Random Forest
+- I fallimenti passati sono il predittore negativo più forte.
+- Il tempo di studio contribuisce positivamente, seppur con ritorni decrescenti.
+- Consumo di alcol e assenze elevate compromettono i risultati.
+- L’istruzione dei genitori conferma il peso del contesto socio-familiare.
+
+Il rendimento scolastico emerge da un insieme di abitudini, risorse familiari e coinvolgimento scolastico.
 
 
-
-Indico anche possibili sviluppi futuri:
-- utilizzo di modelli più avanzati (XGBoost, LightGBM)  
-- interpretabilità tramite SHAP  
-- analisi per sottogruppi (studenti a rischio, frequenza assenze, ecc.)
 <img width="1440" height="807" alt="image" src="https://github.com/user-attachments/assets/43bedcce-6853-4f7e-803c-1049f8a48b0b" />
+### 🛠️ Azioni suggerite
+1. Tutoraggio personalizzato per studenti con fallimenti precedenti  
+2. Rafforzamento delle abitudini di studio efficaci  
+3. Monitoraggio preventivo delle assenze  
+4. Maggior coinvolgimento delle famiglie con basso livello di istruzione
+
+Queste strategie trasformano gli insight del modello in interventi concreti.
+
+### 🏁 Considerazioni finali
+Il progetto mostra come i dati scolastici possano supportare l’identificazione precoce di rischi educativi.  
+Le variabili comportamentali, sociali e familiari emergono come fattori determinanti.
+
+👉 Il notebook completo è disponibile nel repository.
+
+I modelli non sostituiscono gli insegnanti: li supportano nel prendere decisioni basate su evidenze.
+
 
 
