@@ -71,7 +71,7 @@ Questa fase introduce la struttura del dataset e permette di individuare eventua
 - **Fattori negativi:** fallimenti passati, consumo di alcol.  
 - **Distribuzione di G3:** centrata attorno all’11–12, ma con ampia variabilità (0–19).
 
-```python
+
 # Esempio di matrice di correlazione
 corr = df.corr(numeric_only=True)
 sns.heatmap(corr, cmap="coolwarm")
