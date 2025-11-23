@@ -1,12 +1,40 @@
 # Machine learning Final Project
 Studio del dataset student-por per analizzare i fattori che influenzano il voto finale (G3) e costruire modelli di regressione (Random Forest, SVR) ottimizzati con RandomizedSearchCV.
 
-[Uploading Progetto_finale_Data_Science_Vera_Malavolti.ipynb…]()
+Questo progetto applica metodi di data science al **Student Performance Dataset (UCI)** per analizzare i fattori che influenzano il rendimento scolastico e costruire modelli predittivi accurati.
+
+L’analisi comprende:
+- Exploratory Data Analysis (EDA)
+- Preprocessing con Pipeline e ColumnTransformer
+- Confronto di modelli supervisionati (Linear Regression, Random Forest, SVR)
+- Tuning degli iperparametri con RandomizedSearchCV
+- Interpretazione dei risultati tramite feature importance
 
 ## Il dataset e gli obiettivi
 <img width="1002" height="564" alt="image" src="https://github.com/user-attachments/assets/1c8d3897-9b13-40a4-8f49-d1f4366b8330" />
 
+- **Fonte:** UCI Machine Learning Repository  
+- **File usato:** `student-por.csv` (corso di lingua portoghese)  
+- **Dimensioni:** 649 studenti × 33 variabili  
+
+### 🔍 Tipologie di variabili
+- **Famiglia/Sociale:** istruzione dei genitori, occupazione, dimensione familiare  
+- **Personale/Comportamentale:** età, genere, attività sociali, consumo di alcol  
+- **Scolastiche:** tempo di studio, assenze, supporto educativo  
+- **Performance:** G1, G2, G3 (voti ai diversi periodi)
+
+Questo dataset integra aspetti sociali, comportamentali e scolastici, rendendolo ideale per analisi descrittive e predittive.
+
 <img width="1002" height="564" alt="image" src="https://github.com/user-attachments/assets/aaa9eb3b-620e-40c9-80d5-9ffd1e941fc3" />
+
+### 🎯 Obiettivi del progetto
+- Predire il **voto finale (G3)** tramite modelli di regressione.
+- Confrontare le performance di diversi algoritmi.
+- Ottimizzare gli iperparametri mediante **RandomizedSearchCV + Nested Cross-Validation**.
+- Individuare i fattori che influenzano maggiormente il rendimento.
+- Derivare insight utili per supportare studenti in contesti svantaggiati.
+
+L’obiettivo è unire rigore tecnico e utilità pedagogica.
 
 
 ## 📘 Struttura dettagliata del progetto
