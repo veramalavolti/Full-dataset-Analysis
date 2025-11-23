@@ -72,13 +72,6 @@ Questa fase introduce la struttura del dataset e permette di individuare eventua
 - **Distribuzione di G3:** centrata attorno all’11–12, ma con ampia variabilità (0–19).
 
 
-# Esempio di matrice di correlazione
-corr = df.corr(numeric_only=True)
-sns.heatmap(corr, cmap="coolwarm")
-
-<img width="1440" height="807" alt="image" src="https://github.com/user-attachments/assets/0154cc80-5f81-48a1-9802-d708461c818b" />
-
-
 ---
 
 # 🟣 **Slide 5 — Metodologia**
